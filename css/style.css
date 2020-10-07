@@ -1,0 +1,148 @@
+/*
+Color:
+Primary: #417CA9
+Accent:#EDEBE4
+White: #FFFFFF
+Text: #000000
+*/
+
+body {
+  background-color: #ffffff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  font-weight: 300px;
+  line-height: 1.6;
+}
+
+main {
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.Logo {
+  width: 150px;
+  height: 150px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Bebas Neue', sans-serif;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+.project-button {
+  display: inline-block;
+  background-color: #EDEBE4;
+  color: #417CA9;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #EDEBE4;
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+
+.email-button {
+  display: inline-block;
+  background-color: #EDEBE4;
+  color: #417CA9;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #EDEBE4;
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+
+.top-button {
+  display: inline-block;
+  background-color: #EDEBE4;
+  color: #417CA9;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #EDEBE4;
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+
+.resume-button {
+  display: inline-block;
+  background-color: #EDEBE4;
+  color: #417CA9;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #EDEBE4;
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+
+.resume-button:hover, .resume-button:focus {
+  background-color: #417CA9;
+  color: #FFFFFF;
+}
+
+.top-button:hover, .top-button:focus {
+  background-color: #417CA9;
+  color: #FFFFFF;
+}
+
+.email-button:hover, .email-button:focus {
+  background-color: #417CA9;
+  color: #FFFFFF;
+}
+
+.project-button:hover, .project-button:focus {
+  background-color: #417CA9;
+  color: #FFFFFF;
+}
+
+.menu-button {
+  color: #292929;
+  text-decoration: none;
+}
+
+.menu-button:hover, .menu-button:focus {
+  color: #b7b7b7;
+  text-decoration: underline;
+}
+
+.resume-link {
+  color: #000000;
+}
+
+.resume-link:visited {
+  color: #417CA9;
+}
+
+.resume-link:hover, .resume-link:focus {
+  color: ##85C1E9;
+}
