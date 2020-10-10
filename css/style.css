@@ -156,6 +156,11 @@ img {
   padding: 0 15px;
 }
 
+.about-container {
+  padding: 0 15px;
+  display: inline-block;
+}
+
 #work .row {
   margin: 25px 0;
   padding-bottom: 25px;
@@ -195,21 +200,13 @@ img {
 #me {
   background-color: #ffe4cf;
   display: inline-block;
-  width: 100%;
+  //width: 100%;
 }
 
 #project-1 {
   background-color: #ffe4cf;
 }
 
-/*
-#my-image {
-  float: left;
-}
-
-**For later use**
-
-*/
 
 .social-links {
   /* display: flex;
@@ -223,6 +220,14 @@ img {
 
 #contact h2 {
   margin: 10px 0;
+}
+
+.image-resume {
+  display: inline;
+}
+
+.content {
+  display: block;
 }
 
 .footer-container {
