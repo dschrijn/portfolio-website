@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DAVID SCHRIJN DESIGN</title>
   <link rel="shortcut icon" href="img/favicon/favicon.ico">
+  <script src="https://kit.fontawesome.com/7571187bdc.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -16,14 +17,17 @@
   <!--header-->
   <header>
     <div class="container">
-      <a href="index.html"> <img class="logo" src="img/work/placeholder_logo@1x.png" alt="Placeholder Logo"> </a>
+      <div class="navtoggle" id='myNavtoggle'>
+        <a href="index.html"> <img class="logo" src="img/work/placeholder_logo@1x.png" alt="Placeholder Logo"> </a>
       <nav>
         <ul class="navigation">
           <li><a href="index.html" class="menu-button">Work</a></li>
           <li><a href="about.html" class="menu-button">About</a></li>
-          <li><a href="#contact" class="menu-button">Contact</a></li>
+          <li><a href="#contact" class="menu-button" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
+    </div>
     </div>
   </header>
   <!--Main-->
@@ -1070,6 +1074,7 @@
       <p> Copyright David Schrijn 2020 </p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 
