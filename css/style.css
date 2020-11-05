@@ -143,6 +143,27 @@ img {
   color: #b7b7b7;
 }
 
+.menu-button::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  -webkit-transform: translateX(-50%) scaleX(0);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  width: 50%;
+  height: 2px;
+  background-color: rgba(183, 183, 183, 0.9);
+  -webkit-transition: transform 250ms;
+  transition: transform 250ms;
+}
+
+.menu-button:hover::after {
+  -webkit-transform: translateX(-50%) scaleX(1);
+  transform: translateX(-50%) scaleX(1);
+}
+
 .contact-menu-button:hover {
   background-color: inherit;
   color: #b7b7b7;
