@@ -26,10 +26,10 @@
       <div class="navtoggle" id='myNavtoggle'>
         <a href="index.html"> <img class="logo" src="img/work/logo_v2.png" alt="Logo"> </a>
         <nav>
-          <ul class="navigation">
-            <li><a href="index.html" class="menu-button">WORK</a></li>
-            <li><a href="about.html" class="menu-button">ABOUT</a></li>
-            <li><a href="#contact" class="menu-button" onclick="menuToggle()">CONTACT</a></li>
+          <ul>
+            <li><a href="index.html" class="menu-button" title="WORK">WORK</a></li>
+            <li><a href="about.html" class="menu-button" title="ABOUT">ABOUT</a></li>
+            <li><a href="#contact" class="contact-menu-button" onclick="menuToggle()" title="CONTACT">CONTACT</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
@@ -39,11 +39,8 @@
 
   <!--Main-->
   <main id="top">
-    <!--Header div-->
-    <div>
-      <h1></h1>
-    </div>
-    <!--Everything else div-->
+    <!--Button to return to the top-->
+    <a href="#top" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
     <div class="project-1">
       <div>
         <picture>
@@ -82,10 +79,6 @@
           <source srcset="img/work/harmonious/final_ui@1x.jpg" media="(max-width:767px)">
           <img src="img/work/harmonious/final_ui@2x.jpg" alt="Final UI Image">
         </picture>
-      </div>
-      <!--Button to return to the top-->
-      <div class="return">
-        <a href="#top" class="top-button">Back to Top</a>
       </div>
     </div>
 
@@ -137,7 +130,7 @@
             </svg></a>
         </li>
       </ul>
-      <p> Copyright David Schrijn 2020 </p>
+      <p> Copyright &copy; David Schrijn 2020 </p>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
