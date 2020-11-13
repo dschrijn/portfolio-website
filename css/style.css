@@ -55,16 +55,20 @@ img {
   width: 100%;
 }
 
-.menu-button {
-  background-color: inherit;
-  color: #292929;
-  text-decoration: none;
+.project-1 picture {
+  display: block;
 }
 
-.contact-menu-button {
-  background-color: inherit;
-  color: #292929;
-  text-decoration: none;
+.project-1 img {
+  display: block;
+}
+
+.project-2 picture {
+  display: block;
+}
+
+.project-2 img {
+  display: block;
 }
 
 .project-button {
@@ -94,14 +98,16 @@ img {
   display: inline-block;
   background-color: #edebe4;
   color: #1e1f20;
+  font-size: 31px;
   font-weight: 400;
-  padding: 10px;
+  padding: 20px 100px;
   transition: 0.8s opacity;
   text-decoration: none;
 }
 
 .resume-button {
   display: inline-block;
+  position: relative;
   background-color: #edebe4;
   color: #1e1f20;
   font-weight: 400;
@@ -121,11 +127,6 @@ img {
   opacity: 0.9;
 }
 
-.top-button:hover {
-  background-color: #a02e13;
-  color: #fff;
-}
-
 .email-button:hover {
   background-color: #fff;
   color: #000;
@@ -138,23 +139,44 @@ img {
   opacity: 0.9;
 }
 
-.menu-button:hover {
+.menu-button {
+  display: inline-block;
   background-color: inherit;
-  color: #b7b7b7;
+  color: #292929;
+  text-decoration: none;
+}
+
+.menu-button::before {
+  position: absolute;
+  color: #a02e13;
+  overflow: hidden;
+  content: attr(title);
+  transition: all 0.3s;
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+.menu-button:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.menu-button::before {
+  transform: scale(1.5);
 }
 
 .menu-button::after {
   content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 0;
+  position: relative;
+  left: 30px;
+  display: block;
   transform: translateX(-50%) scaleX(0);
   -webkit-transform: translateX(-50%) scaleX(0);
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-  width: 50%;
+  width: 100%;
   height: 2px;
-  background-color: rgba(183, 183, 183, 0.9);
+  background-color: rgba(110, 110, 110, 0.9);
   -webkit-transition: transform 250ms;
   transition: transform 250ms;
 }
@@ -164,9 +186,51 @@ img {
   transform: translateX(-50%) scaleX(1);
 }
 
-.contact-menu-button:hover {
+.contact-menu-button {
   background-color: inherit;
-  color: #b7b7b7;
+  color: #292929;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.contact-menu-button::before {
+  position: absolute;
+  color: #a02e13;
+  overflow: hidden;
+  content: attr(title);
+  transition: all 0.3s;
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+.contact-menu-button:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.contact-menu-button::before {
+  transform: scale(1.5);
+}
+
+.contact-menu-button::after {
+  content: '';
+  position: relative;
+  left: 44px;
+  display: block;
+  transform: translateX(-50%) scaleX(0);
+  -webkit-transform: translateX(-50%) scaleX(0);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(110, 110, 110, 0.9);
+  -webkit-transition: transform 250ms;
+  transition: transform 250ms;
+}
+
+.contact-menu-button:hover::after {
+  -webkit-transform: translateX(-50%) scaleX(1);
+  transform: translateX(-50%) scaleX(1);
 }
 
 .resume-link {
@@ -221,6 +285,12 @@ img {
   width: 100%;
 }
 
+#work h2,
+h3,
+p {
+  color: #4a4d4f;
+}
+
 #contact {
   background-color: #3a3c41;
   color: inherit;
@@ -265,6 +335,47 @@ img {
 
 #contact h2 {
   margin: 50px 30px 30px;
+}
+
+#resume {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#return-to-top:hover {
+  background: rgba(160, 46, 19, 1);
+}
+
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}
+
+.aliens {
+  width: 100%;
+  height: auto;
+  background-color: #dedede;
+}
+
+.prototype {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.prototype iframe {
+  background-color: transparent;
+  border: none;
+  border-width: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 
 .about-column.col-12 img {
@@ -327,9 +438,271 @@ img {
   margin: 50px 15px;
 }
 
-#resume {
-  text-align: center;
-  padding-top: 20px;
+#ship {
+  animation: ship-move 0.2s linear infinite alternate;
+}
+
+@keyframes ship-move {
+  from {
+    transform: translateY(-2px);
+  }
+
+  to {
+    transform: translateY(2px);
+  }
+}
+
+#beam {
+  animation: beams 1s linear infinite;
+}
+
+@keyframes beams {
+  from {
+    transform: translateY(100px);
+  }
+
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+#alien2 {
+  animation: alien-move 0.8s linear alternate infinite;
+}
+
+@keyframes alien-move {
+  from {
+    transform: translateY(-5px);
+  }
+
+  to {
+    transform: translateY(5px);
+  }
+}
+
+#alien2_left_arm {
+  animation: scared 0.2s linear alternate infinite;
+  transform-origin: left;
+  transform-box: fill-box;
+}
+
+#alien2_right_arm {
+  animation: scared 0.2s linear alternate infinite;
+  transform-origin: right;
+  transform-box: fill-box;
+}
+
+#alien2_right_leg {
+  animation: kick 0.2s linear alternate infinite;
+  transform-origin: right;
+  transform-box: fill-box;
+}
+
+#alien2_left_leg {
+  animation: kicks 0.2s linear alternate infinite;
+  transform-origin: left;
+  transform-box: fill-box;
+}
+
+#alien2_pupil {
+  animation: back_forth 1s linear alternate infinite;
+}
+
+#alien2_mouth {
+  animation: scream 0.5s linear alternate infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#alien2_hat {
+  animation: float 0.35s linear alternate infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#alien1_left_leg {
+  animation: left_step 0.1s linear alternate infinite;
+}
+
+#alien1_right_leg {
+  animation: right_step 0.1s linear alternate infinite;
+}
+
+#alien1_body,
+#alien1_hat {
+  animation: body_move 0.1s linear alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#alien1_pupil {
+  animation: eye_move 0.5s ease-in-out alternate infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#alien1_eyeball {
+  animation: eye_grow 1s linear alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#alien1_mouth {
+  animation: mouth_small 0.3s ease-in-out alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#alien1_right_arm {
+  animation: point 0.1s linear alternate infinite;
+  transform-origin: right;
+  transform-box: fill-box;
+}
+
+#alien1_left_arm {
+  animation: swing 0.1s linear alternate infinite;
+  transform-origin: left;
+  transform-box: fill-box;
+}
+
+@keyframes swing {
+  from {
+    transform: rotateZ(0);
+  }
+
+  to {
+    transform: rotateZ(20deg);
+  }
+}
+
+@keyframes point {
+  from {
+    transform: rotateZ(0);
+  }
+
+  to {
+    transform: rotateZ(20deg);
+  }
+}
+
+@keyframes mouth_small {
+  from {
+    transform: scaleX(0.8);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes eye_grow {
+  from {
+    transform: scale(1.25);
+  }
+
+  to {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes eye_move {
+  from {
+    transform: translateX(-1) translateY(-1);
+  }
+
+  to {
+    transform: translateX(1px) translateY(-2px);
+  }
+}
+
+@keyframes body_move {
+  from {
+    transform: scaleY(1);
+  }
+
+  to {
+    transform: scaleY(1.1);
+  }
+}
+
+@keyframes left_step {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes right_step {
+  from {
+    transform: translateY(-5px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translateY(-20px) rotateZ(-30deg);
+  }
+
+  to {
+    transform: translateY(-40px) rotateZ(30deg);
+  }
+}
+
+@keyframes scream {
+  from {
+    transform: scaleX(0.5) scaleY(0.5);
+  }
+
+  to {
+    transform: scaleX(1) scaleY(1.5);
+  }
+}
+
+@keyframes back_forth {
+  from {
+    transform: translate(-2px);
+  }
+
+  to {
+    transform: translate(2px);
+  }
+}
+
+@keyframes kicks {
+  from {
+    transform: translateX(2) rotateZ(0deg);
+  }
+
+  to {
+    transform: translateX(-2px) rotateZ(20deg);
+  }
+}
+
+@keyframes kick {
+  from {
+    transform: translateX(-2px) rotateZ(0deg);
+  }
+
+  to {
+    transform: translateX(3px) rotateZ(10deg);
+  }
+}
+
+@keyframes scared {
+  from {
+    transform: rotateZ(-80deg);
+  }
+
+  to {
+    transform: rotateZ(50deg);
+  }
 }
 
 .logo {
@@ -337,12 +710,17 @@ img {
   margin-top: 10px;
 }
 
+.behance:hover {
+  fill: #fff;
+}
+
 .top-button {
   text-align: right;
 }
 
-.return {
-  text-align: right;
+.skills_col-md-4 li,
+.skills_software_col-md-4 li {
+  text-align: left;
 }
 
 .navtoggle li:not(:last-child) {
@@ -537,6 +915,40 @@ main {
     font-weight: 700;
   }
 
+  #return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  #return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 18px;
+    top: 13px;
+    font-size: 16px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
   /* About Page */
 
   .row.about {
@@ -636,14 +1048,6 @@ main {
     margin: 0 100px 100px;
     font-size: 2.25em;
     font-weight: 500;
-  }
-
-  .column.col-lg-7 {
-    width: 58.33%;
-  }
-
-  .column.col-lg-5 {
-    width: 41.66%;
   }
 
   /* About Page */
