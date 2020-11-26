@@ -18,6 +18,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -42,64 +44,85 @@
     <!--Button to return to the top-->
     <a href="#top" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
     <div id="project">
-      <div class="container">
-        <div class="row">
+      <div class="container beam">
+        <div class="row title">
           <picture>
             <source srcset="img/work/beam/title.jpg" media="(max-width:767px)">
             <img src="img/work/beam/title@2x.jpg" alt="Thumbnail Image">
           </picture>
         </div>
-        <div class="row">
+        <div class="row intro">
+          <div class="css-column col-6">
+            <h2>From Pixels to Animation</h2>
+            <p>The process in taking an illustration and bringing it to life with a little code and some animation fundamentals.</p>
+          </div>
+          <div class="css-column col-3">
+            <h2>Role:</h2>
+            <ul>
+              <li>Front-End Developer</li>
+            </ul>
+          </div>
+          <div class="css-column col-3">
+            <h2>Tools:</h2>
+            <ul>
+              <li>Sketch App</li>
+              <li>Figma</li>
+              <li>Atom</li>
+              <li>Chrome Inspector</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row thumbnail">
           <h2>Thumbnails</h2>
           <p>I started by sketching out how I wanted
             each element to be animated. </p>
         </div>
-        <div class="row">
+        <div class="row thumb_img">
           <picture>
-            <source srcset="#" media="(max-width:767px)">
-            <img src="#" alt="Thumbnail Image">
+            <source srcset="img/work/beam/thumbnail.png" media="(max-width:767px)">
+            <img src="img/work/beam/thumbnail.png" alt="Thumbnail Image">
           </picture>
         </div>
-        <div class="row">
+        <div class="row svg">
           <h2>SVG Preparation & Export</h2>
           <p>Once the thumbnails were completed,
             I used Figma to configure the SVG file to
             group each element that I wanted to
             animate.</p>
         </div>
-        <div class="row">
+        <div class="row svg_img">
           <picture>
-            <source srcset="#" media="(max-width:767px)">
-            <img src="#" alt="Figma SVG Image">
+            <source srcset="img/work/beam/figma.jpg" media="(max-width:767px)">
+            <img src="img/work/beam/figma@2x.jpg" alt="Figma SVG Image">
           </picture>
         </div>
-        <div class="row">
+        <div class="row animation">
           <h2>Animation</h2>
           <h3>Ship</h3>
           <p>I started by animating the ship to hover
             by simply moving up and down.</p>
         </div>
-        <div class="row">
+        <div class="row ship_img">
           <picture>
-            <source srcset="#" media="(max-width:767px)">
-            <img src="#" alt="Ship Image">
+            <source srcset="img/work/beam/ship.gif" media="(max-width:767px)">
+            <img src="img/work/beam/ship.gif" alt="Ship Gif">
           </picture>
         </div>
-        <div class="row">
+        <div class="row light">
           <h3>Light Beams</h3>
           <p>Next I animated the light beams
             to animate up and start again from
-            the bottom in an infinite loop, which
-            would to look like it was lifting the alien.
+            the bottom in an infinite loop, making
+            it look like it was lifting the alien.
           </p>
         </div>
-        <div class="row">
+        <div class="row light_img">
           <picture>
-            <source srcset="#" media="(max-width:767px)">
-            <img src="#" alt="Light Beam Image">
+            <source srcset="img/work/beam/beam.gif" media="(max-width:767px)">
+            <img src="img/work/beam/beam.gif" alt="Light Beam Image">
           </picture>
         </div>
-        <div class="row">
+        <div class="row light_p">
           <p>This seemed really dull and unrealistic.
             I wanted the beams of light to randomly
             start at a certain point and time, so I
@@ -110,18 +133,16 @@
         <div class="row">
           <div class="css-column col-md-6">
             <picture>
-              <source srcset="#" media="(max-width:767px)">
-              <img src="#" alt="Code Image">
+              <source srcset="img/work/beam/beam_js.png" media="(max-width:767px)">
+              <img src="img/work/beam/beam_js.png" alt="Code Image">
             </picture>
-          </div>
-          <div class="css-column col-md-6">
             <picture>
-              <source srcset="#" media="(max-width:767px)">
-              <img src="#" alt="New Beam Light Image">
+              <source srcset="img/work/beam/new_beam.gif" media="(max-width:767px)">
+              <img src="img/work/beam/new_beam.gif" alt="New Beam Light Image">
             </picture>
           </div>
         </div>
-        <div class="row">
+        <div class="row alien1">
           <h3>Alien 1</h3>
           <p>For Alien 1, I wanted the alien to seem
             scared and confused. I started with both
@@ -129,18 +150,18 @@
             each leg kicking in and out. Next I added
             a basic facial animation with the mouth
             scaling and the pupil translating left to
-            right. Lastly. I animated the body to
+            right. Lastly, I animated the body to
             move up and down and the hat to do
             the same but with a slight rotation.
           </p>
         </div>
-        <div class="row">
+        <div class="row alien1_img">
           <picture>
-            <source srcset="#" media="(max-width:767px)">
-            <img src="#" alt="Alien 1 Image">
+            <source srcset="img/work/beam/alien1.gif" media="(max-width:767px)">
+            <img src="img/work/beam/alien1.gif" alt="Alien 1 Image">
           </picture>
         </div>
-        <div class="row">
+        <div class="row alien2">
           <h3>Alien 2</h3>
           <p>For Alien 2, I wanted the alien to
             seem frantic and point towards the
@@ -155,11 +176,25 @@
             the mouth to increase and shrink.
           </p>
         </div>
-        <div class="row">
+        <div class="row alien2_img">
           <picture>
-            <source srcset="#" media="(max-width:767px)">
-            <img src="#" alt="Alien 2 Image">
+            <source srcset="img/work/beam/alien2.gif" media="(max-width:767px)">
+            <img src="img/work/beam/alien2.gif" alt="Alien 2 Image">
           </picture>
+        </div>
+        <div class="row results">
+          <h2>Results</h2>
+          <p>By applying CSS and the basic principles of animation, I was able to take an illustration
+            and create a fun animation. While working on this project, I learned how CSS and Keyframes
+            can configure an elements style. Keyframes have many properties that allow creative
+            interactions, which I only scratched the surface using transitions. Even though you can
+            use only CSS Animation to achieve your goal, knowing JavaScript is extremely helpful for
+            complex animations.
+          </p>
+        </div>
+        <div class="row end">
+          <h1>Thank you for reading!</h1>
+          <h2>Click on the Github link below for the source code.</h2>
         </div>
       </div>
     </div>
