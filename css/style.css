@@ -145,91 +145,11 @@ img {
   text-decoration: none;
 }
 
-.menu-button::before {
-  position: absolute;
-  color: #30d5c8;
-  overflow: hidden;
-  content: attr(title);
-  transition: all 0.3s;
-  transform: scale(0.8);
-  opacity: 0;
-}
-
-.menu-button:hover::before {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.menu-button::before {
-  transform: scale(1.5);
-}
-
-.menu-button::after {
-  content: '';
-  position: relative;
-  left: 30px;
-  display: block;
-  transform: translateX(-50%) scaleX(0);
-  -webkit-transform: translateX(-50%) scaleX(0);
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  width: 100%;
-  height: 2px;
-  background-color: rgba(110, 110, 110, 0.9);
-  -webkit-transition: transform 250ms;
-  transition: transform 250ms;
-}
-
-.menu-button:hover::after {
-  -webkit-transform: translateX(-50%) scaleX(1);
-  transform: translateX(-50%) scaleX(1);
-}
-
 .contact-menu-button {
   background-color: inherit;
   color: #292929;
   text-decoration: none;
   display: inline-block;
-}
-
-.contact-menu-button::before {
-  position: absolute;
-  color: #30d5c8;
-  overflow: hidden;
-  content: attr(title);
-  transition: all 0.3s;
-  transform: scale(0.8);
-  opacity: 0;
-}
-
-.contact-menu-button:hover::before {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.contact-menu-button::before {
-  transform: scale(1.5);
-}
-
-.contact-menu-button::after {
-  content: '';
-  position: relative;
-  left: 44px;
-  display: block;
-  transform: translateX(-50%) scaleX(0);
-  -webkit-transform: translateX(-50%) scaleX(0);
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  width: 100%;
-  height: 2px;
-  background-color: rgba(110, 110, 110, 0.9);
-  -webkit-transition: transform 250ms;
-  transition: transform 250ms;
-}
-
-.contact-menu-button:hover::after {
-  -webkit-transform: translateX(-50%) scaleX(1);
-  transform: translateX(-50%) scaleX(1);
 }
 
 .resume-link {
@@ -943,6 +863,86 @@ main {
 /* Responsive Web (Media Queries) */
 @media only screen and (min-width: 640px) {
   /* Work Page */
+  .menu-button::before {
+    position: absolute;
+    color: #30d5c8;
+    overflow: hidden;
+    content: attr(title);
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  .menu-button:hover::before {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .menu-button::before {
+    transform: scale(1.5);
+  }
+
+  .menu-button::after {
+    content: '';
+    position: relative;
+    left: 30px;
+    display: block;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(110, 110, 110, 0.9);
+    -webkit-transition: transform 250ms;
+    transition: transform 250ms;
+  }
+
+  .menu-button:hover::after {
+    -webkit-transform: translateX(-50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
+  }
+
+  .contact-menu-button::before {
+    position: absolute;
+    color: #30d5c8;
+    overflow: hidden;
+    content: attr(title);
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  .contact-menu-button:hover::before {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .contact-menu-button::before {
+    transform: scale(1.5);
+  }
+
+  .contact-menu-button::after {
+    content: '';
+    position: relative;
+    left: 44px;
+    display: block;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(110, 110, 110, 0.9);
+    -webkit-transition: transform 250ms;
+    transition: transform 250ms;
+  }
+
+  .contact-menu-button:hover::after {
+    -webkit-transform: translateX(-50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
+  }
+
   .logo {
     max-width: 50px;
     margin-top: 5px;
