@@ -266,6 +266,28 @@ p {
   top: 5px;
 }
 
+.row-title h1 {
+  font-family: Lato, serif;
+  font-weight: 900;
+  color: #333;
+}
+
+.row-project h1,
+.row-process h1,
+.row-define h1 {
+  font-family: adobe-garamond-pro, serif;
+  font-style: italic;
+  font-weight: 700;
+  color: #503e62;
+}
+
+.row-project h3,
+.row-understanding h3 {
+  font-family: Lato, serif;
+  font-weight: 700;
+  color: #ac5d5d;
+}
+
 .row.end h1 {
   font-family: 'Fjalla One', sans-serif;
   font-size: 28px;
@@ -784,13 +806,13 @@ header {
   z-index: 1;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
 }
 
@@ -862,6 +884,7 @@ main {
 
 /* Responsive Web (Media Queries) */
 @media only screen and (min-width: 640px) {
+
   /* Work Page */
   .menu-button::before {
     position: absolute;
@@ -966,7 +989,7 @@ main {
     padding-top: 6px;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
 
@@ -981,7 +1004,7 @@ main {
     padding-top: 6px;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
@@ -1243,8 +1266,8 @@ main {
 }
 
 @media only screen and (min-width: 1024px) {
-  /* Work Page */
 
+  /* Work Page */
   #work h3 {
     font-size: 1.75em;
   }
