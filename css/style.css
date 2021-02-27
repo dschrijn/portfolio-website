@@ -274,7 +274,13 @@ p {
 
 .row-project h1,
 .row-process h1,
-.row-define h1 {
+.row-define h1,
+.row-empathy h1,
+.row-prototype h1,
+.row-test h1,
+.row-system h1,
+.row-final h1,
+.row-thanks h1 {
   font-family: adobe-garamond-pro, serif;
   font-style: italic;
   font-weight: 700;
@@ -282,9 +288,23 @@ p {
 }
 
 .row-project h3,
-.row-understanding h3 {
+.row-understanding h3,
+.row-problem h3,
+.row-research h3,
+.row-wireframes h3,
+.row-report h3,
+.row-interactive h2 {
   font-family: Lato, serif;
   font-weight: 700;
+  color: #ac5d5d;
+}
+
+.row-problem h4,
+.row-sketches h4,
+.row-wireframe h4,
+.row-mockups h4 {
+  font-family: Lato, serif;
+  font-weight: 500;
   color: #ac5d5d;
 }
 
@@ -376,6 +396,26 @@ p {
   height: 100%;
 }
 
+.row-iframe {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.row-iframe iframe {
+  background-color: transparent;
+  border: solid black 1px;
+  border-width: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .about-column.col-12 img {
   padding: 0 25px;
 }
@@ -434,6 +474,31 @@ p {
   color: #1e1f20;
   text-align: center;
   margin: 50px 15px;
+}
+
+.row-title {
+  margin: 20px 0;
+}
+
+.row-persona-flow {
+  margin: 30px 0 10px;
+}
+
+.column_img_col_6 {
+  margin: 20px 0;
+}
+
+.row-design-img {
+  margin: 20px 0;
+}
+
+.column_col_6.img {
+  margin: 20px 120px 0;
+}
+
+.column_col_6.thanks h1 {
+  font-size: 36px;
+  text-align: center;
 }
 
 #ship {
@@ -806,13 +871,13 @@ header {
   z-index: 1;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
 }
 
@@ -884,7 +949,6 @@ main {
 
 /* Responsive Web (Media Queries) */
 @media only screen and (min-width: 640px) {
-
   /* Work Page */
   .menu-button::before {
     position: absolute;
@@ -989,7 +1053,7 @@ main {
     padding-top: 6px;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -1004,7 +1068,7 @@ main {
     padding-top: 6px;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
@@ -1132,6 +1196,16 @@ main {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+  }
+
+  /* Harmonious Case Study */
+  .column__col_6 {
+    width: 50%;
+    float: left;
+  }
+
+  .column_col_6.img {
+    margin: 0 250px;
   }
 
   /* Beam Case Study */
@@ -1266,7 +1340,6 @@ main {
 }
 
 @media only screen and (min-width: 1024px) {
-
   /* Work Page */
   #work h3 {
     font-size: 1.75em;
@@ -1340,6 +1413,113 @@ main {
     box-shadow: 2px 2px 8px rgba(50, 50, 50, 0.75);
     margin: 70px 55% 30px;
     width: 550px;
+  }
+
+  /* Harmonious Case Study */
+  .column__col_6 {
+    width: 25%;
+    float: left;
+  }
+
+  .row-title h1 {
+    margin-left: 50px;
+  }
+
+  .column_col_6.title {
+    width: 50%;
+    float: left;
+  }
+
+  .column_col_6.title span {
+    display: inline-block;
+    padding: 30px 50px 30px 0;
+  }
+
+  .column.col_6.project {
+    width: 45%;
+    float: left;
+    margin: 0 0 0 35px;
+  }
+
+  .row-project h1 {
+    margin-left: 30px;
+  }
+
+  .row-process {
+    display: block;
+    width: 100%;
+    margin-top: 300px;
+    margin-left: 30px;
+  }
+
+  .row-define h1,
+  .row-understanding h3,
+  .row-empathy h1,
+  .row-prototype h1,
+  .row-test h1,
+  .row-system h1,
+  .row-final h1 {
+    margin-left: 30px;
+  }
+
+  .row-understanding span {
+    display: inline-block;
+    margin: 0 300px 0 30px;
+  }
+
+  .row-problem {
+    display: inline-block;
+    margin: 40px 30px 40px 390px;
+  }
+
+  .row-research {
+    display: inline-block;
+    margin: 0 500px 20px 30px;
+  }
+
+  .column.col_6.flow {
+    width: 50%;
+    float: left;
+    margin-bottom: 70px;
+  }
+
+  .row-wireframes {
+    margin: 0 400px 0 30px;
+  }
+
+  .row-sketches h4,
+  .row-wireframe h4,
+  .row-mockups h4 {
+    margin-left: 30px;
+  }
+
+  .row-test span {
+    display: inline-block;
+    margin: 0 470px 0 35px;
+  }
+
+  .column.col_6.report {
+    width: 45%;
+    float: left;
+    margin-left: 30px;
+    margin-top: 70px;
+  }
+
+  .column_col_6.img {
+    margin: 0 420px;
+  }
+
+  .column_col_6.thanks h1 {
+    font-size: 55px;
+  }
+
+  .row-system {
+    margin-top: 600px;
+  }
+
+  .row-system span {
+    display: inline-block;
+    margin: 0 480px 0 30px;
   }
 
   /* Beam Case Study */
@@ -1576,6 +1756,49 @@ main {
     margin: 0 90px 100px;
     font-size: 2.25em;
     font-weight: 500;
+  }
+
+  /* Harmonious */
+
+  .column_col_6.title span {
+    padding: 35px 50px 30px 0;
+  }
+
+  .column.col_6.project {
+    width: 40%;
+    margin: 0 0 0 100px;
+  }
+
+  .row-understanding span {
+    margin: 0 700px 0 30px;
+  }
+
+  .row-problem {
+    margin: 40px 30px 40px 670px;
+  }
+
+  .row-research {
+    margin: 0 680px 20px 30px;
+  }
+
+  .row-wireframes {
+    margin: 0 640px 0 30px;
+  }
+
+  .row-test span {
+    margin: 0 670px 0 35px;
+  }
+
+  .row-system span {
+    margin: 0 670px 0 30px;
+  }
+
+  .column_col_6.img {
+    margin: 0 600px;
+  }
+
+  .column_col_6.thanks h1 {
+    font-size: 75px;
   }
 
   /* Beam Case Study */
