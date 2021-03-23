@@ -4,7 +4,7 @@
 
 body {
   background-color: #fff;
-  color: #000;
+  color: #3c3c3c;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -185,7 +185,7 @@ img {
 
 #hero {
   text-align: left;
-  background-color: #1e1f20;
+  background-color: #161616;
   color: #edebe4;
   padding: 20px 0 50px;
   display: inline-block;
@@ -264,6 +264,97 @@ p {
 #return-to-top:hover i {
   color: #fff;
   top: 5px;
+}
+
+.thoughtcloud-bg {
+  position: relative;
+  height: 610px;
+  background-image: url(../img/work/thoughtcloud/thoughtcloud.png);
+  background-size: cover;
+  background-position: 0% 100%;
+}
+
+.harmonious-bg {
+  position: relative;
+  height: 610px;
+  background-image: url(../img/work/harmonious/harmonious.png);
+  background-size: cover;
+  background-color: #333;
+  background-position: 30% 50%;
+}
+
+.lingotastic-bg {
+  position: relative;
+  height: 610px;
+  background-image: url(../img/work/lingotastic/lingotastic_img@2x.png);
+  background-size: cover;
+  background-color: #333;
+  background-position: 40% 50%;
+}
+
+.beam-bg {
+  position: relative;
+  height: 610px;
+  background-color: #333;
+  background-image: url(../img/work/beam/title@2x.jpg);
+  background-size: cover;
+  background-position: 40% 50%;
+}
+
+.thoughtcloud-bg img {
+  width: 100%;
+}
+
+.project-role {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  opacity: 0.4;
+  font-size: 14px;
+}
+
+.project-title {
+  margin: 22px 30px 22px 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 32px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+
+.project-description {
+  margin-right: 50px;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.project-cs-button {
+  display: inline-block;
+  margin-top: 50px;
+  border-style: solid;
+  border-width: medium;
+  padding: 14px 24px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.project-info {
+  position: absolute;
+  top: 60px;
+  left: 43px;
+}
+
+.project-info img {
+  max-width: 200px;
+  margin-bottom: 75px;
 }
 
 .row-title h1 {
@@ -950,6 +1041,24 @@ main {
 /* Responsive Web (Media Queries) */
 @media only screen and (min-width: 640px) {
   /* Work Page */
+  .project-info {
+    margin-right: 250px;
+  }
+
+  .thoughtcloud-bg {
+    height: 690px;
+    background-position: 12% 100%;
+  }
+
+  .harmonious-bg {
+    height: 690px;
+  }
+
+  .lingotastic-bg {
+    height: 690px;
+    background-position: 5% 50%;
+  }
+
   .menu-button::before {
     position: absolute;
     color: #30d5c8;
@@ -1077,6 +1186,7 @@ main {
   }
 
   #work {
+    margin-top: 150px;
     padding-top: 20px;
     font-size: 16px;
   }
@@ -1101,6 +1211,7 @@ main {
 
   .column.col-md-6 {
     width: 50%;
+    margin-left: 400px;
     padding: 10px;
   }
 
@@ -1341,6 +1452,26 @@ main {
 
 @media only screen and (min-width: 1024px) {
   /* Work Page */
+  .project-info {
+    margin-right: 400px;
+  }
+
+  .project-description.lingo {
+    margin-right: 220px;
+  }
+
+  .thoughtcloud-bg {
+    background-position: 0% 65%;
+  }
+
+  .harmonious-bg {
+    background-position: 80% 50%;
+  }
+
+  .lingotastic-bg {
+    background-position: 0% 50%;
+  }
+
   #work h3 {
     font-size: 1.75em;
   }
@@ -1741,21 +1872,28 @@ main {
 }
 
 @media only screen and (min-width: 1440px) {
+  .project-info {
+    margin-right: 800px;
+  }
+
   .container {
-    max-width: 1440px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
   }
 
   #hero h1 {
-    margin: 100px 0 25px;
+    margin: 100px 500px 50px 50px;
+    text-align: left;
+    line-height: normal;
     font-size: 70px;
   }
 
   #hero span {
-    margin: 0 90px 100px;
-    font-size: 2.25em;
-    font-weight: 500;
+    margin: 0 650px 100px 50px;
+    text-align: left;
+    font-size: 1.75em;
+    font-weight: 300;
   }
 
   /* Harmonious */
